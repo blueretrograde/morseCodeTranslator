@@ -1,28 +1,53 @@
-body {
-  background-image: url(https://i.pinimg.com/originals/9b/67/b4/9b67b4e5299c980b2d6beaf7dc6958b4.gif);
-  background-repeat: no-repeat;
-  background-size: cover;
+@media screen and (min-width: 769px) {
+  body {
+    background-image: url(https://i.pinimg.com/originals/9b/67/b4/9b67b4e5299c980b2d6beaf7dc6958b4.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .user__interaction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 300px;
+  }
+  .translate__button {
+    margin-top: 20px;
+    width: 200px;
+    margin-left: 300px;
+  }
+  .morse__display {
+    background-color: white;
+    opacity: 0.6;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+  }
 }
-
-.user__interaction {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin: 300px;
-}
-
-.translate__button {
-  margin-top: 20px;
-  width: 200px;
-  margin-left: 300px;
-}
-
-.morse__display {
-  background-color: white;
-  opacity: 0.6;
-  height: 100px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 100px;
+@media screen and (max-width: 768px) {
+  body {
+    background-image: url(https://i.pinimg.com/originals/9b/67/b4/9b67b4e5299c980b2d6beaf7dc6958b4.gif);
+    background-repeat: repeat;
+    background-size: cover;
+  }
+  .user__interaction {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 100px;
+  }
+  .translate__button {
+    margin-top: 20px;
+    width: 155px;
+  }
+  .morse__display {
+    background-color: white;
+    opacity: 0.6;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 100px;
+  }
 }/*# sourceMappingURL=style.css.map */
