@@ -51,7 +51,7 @@ it ("should check for empty input", () => {
 
 it ("should check for invalid input", () => {
 
-    const result = checkForValidInput(input)
+    const result = checkForInvalidInput(input)
 
     expect(result).toBe("please enter a valid input")
 })
