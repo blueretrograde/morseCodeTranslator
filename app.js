@@ -35,10 +35,12 @@ const translate = (engInput) => {
     const wordArray = engInput.split("")
 
 
-        wordArray.forEach((letter) => {
+        wordArray.forEach(letter => {
         
         const newWordArray = morseCode[letter]
         console.log(newWordArray)
+
+    
         
     }); 
     
@@ -51,15 +53,30 @@ translate("123")
 const checkForInvalidInput = () => {
 
     if (!validCharacters.includes(engInput))
-    console.log("Please use a valid character")
+    console.log("Please enter a valid input")
 
 }
 
 checkForInvalidInput("1")
 
 
+const checkForEmptyInput = () => {
+
+    if (engInput = "")
+    console.log("please enter something to translate")
+}
+
+checkForEmptyInput("")
 
 
+const checkForSymbols = () => {
+
+if (engInput.includes("@"))
+console.log("symbols are not supported")
+
+}
+
+checkForSymbols("@")
 
 
 
