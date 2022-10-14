@@ -1,16 +1,15 @@
-import {morseCode} from "./morseCode.js"
+import {morseCode, validCharacters} from "./morseCode.js"
+
 
 console.log("this is linked")
 
 
-export const translator = (input) => {
+// export const translator = (input) => {
 
 
-    if (input == "A")
-    input = morseCode.A
-    return morseCode.A
+//     if (input == "A")
+//     input = morseCode.A
+//     return morseCode.A
 
-}
-
-translator("A")
+// }
 
