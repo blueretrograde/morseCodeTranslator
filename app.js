@@ -15,7 +15,8 @@ import {morseCode, validCharacters} from "./morseCode.js"
 //SELECTORS
 
 const engDisplay = document.querySelector(".english__display")
-const engInput = document.querySelector(".english__input")
+// const engInput = document.querySelector(".english__input")
+let engInput = document.getElementById("english__input")
 const translateBtn = document.querySelector(".translate__button")
 const morseDisplay = document.querySelector("morse__display")
 
@@ -29,9 +30,9 @@ const morseDisplay = document.querySelector("morse__display")
 // }
 
 
-const translate = (word) => {
+const translate = (engInput) => {
 
-    const wordArray = word.split("")
+    const wordArray = engInput.split("")
 
 
         wordArray.forEach((letter) => {
@@ -47,6 +48,20 @@ translate("123")
 
 
 
+const checkForInvalidInput = () => {
+
+    if (!validCharacters.includes(engInput))
+    console.log("Please use a valid character")
+
+}
+
+checkForInvalidInput("1")
+
+
+
+
+
+
 
 
 
@@ -55,4 +70,3 @@ translate("123")
 
 //EVENT LISTENERS
 
-translateBtn.addEventListener("click", translate )
